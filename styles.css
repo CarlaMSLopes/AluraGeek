@@ -1,6 +1,7 @@
 /* Imports fontes */
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Variavés */
 :root {
@@ -9,7 +10,8 @@
   --base-light: #eeeeee;
   --base-hover: #76abae;
   --font-title: "Silkscreen", sans-serif;
-  --font-body: "Chakra Petch", sans-serif;
+  /* --font-body: "Chakra Petch", sans-serif; */
+  --font-body: "Roboto", sans-serif;
 }
 
 /* Estilização */
@@ -69,10 +71,11 @@ main {
   padding: 1%;
   text-align: center;
   white-space: wrap;
+  color: var(--base-light);
 }
 
 .card:hover {
-  background-color: var(--base-hover);
+  background-color: #3A787B;
 }
 
 .adicionar_itens {
@@ -81,7 +84,7 @@ main {
 
 .card .botao__apagar img {
   width: 24px;
-  border: none;  
+  border: none;
   cursor: pointer;
 }
 
@@ -90,19 +93,19 @@ main {
   border: solid 2px var(--base-dark);
 }
 
+/* tirei o nome de classe */
 .card h2 {
   font-family: var(--font-body);
   font-size: 16px;
-  font-weight: 400;
-  color: var(--base-light);
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
+/* tirei o nome de classe */
 .card h3 {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  color: var(--base-light);
   letter-spacing: 2px;
 }
 
@@ -114,4 +117,8 @@ main {
   background-color: gold;
   width: 400px;
   height: 400px;
+}
+
+.cor {
+  color: red;
 }
