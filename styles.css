@@ -1,73 +1,117 @@
 /* Imports fontes */
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 /* Variavés */
 :root {
-    --base-dark: #222831;
-    --base-grey: #31363F;
-    --base-light: #EEEEEE;
-    --base-hover: #76ABAE;
-    --font-title: "Silkscreen", sans-serif;
-    --font-body: "Chakra Petch", sans-serif;
+  --base-dark: #222831;
+  --base-grey: #31363f;
+  --base-light: #eeeeee;
+  --base-hover: #76abae;
+  --font-title: "Silkscreen", sans-serif;
+  --font-body: "Chakra Petch", sans-serif;
 }
-
-/* Flexbox */
-body {
-    display: flex;
-    flex-direction: column;    
-}
-
-main {
-    margin: 0 128px;
-    display: flex;
-    flex-direction: row;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.lista_de_itens {
-    display: flex;
-    flex-direction: column;
-}
-
 
 /* Estilização */
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--base-light);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--base-light);
 }
 
 header {
-    width: 100%;
-    background-color: var(--base-dark);
-    padding:  1% 0 1% 0;
+  width: 100%;
+  background-color: var(--base-dark);
+  padding: 1% 0 1% 0;
 }
 
 header h1 {
-    font-family: var(--font-title);
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--base-light);
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--base-light);
 }
 
 header img {
-    width: 48px;
+  width: 48px;
 }
 
 main {
-    width: 100%;  
-    margin: 0 128px;  
-    background-color: var(--base-grey);
+  margin: 0 128px;
+  background-color: var(--base-hover);
 }
 
 .lista_de_itens {
-    
+  max-width: 800px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2%;
+}
+
+.lista_de_itens h1 {
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--base-dark);
+  letter-spacing: 2px;
+}
+
+.cards_produtos {
+  width: 100%;
+}
+
+.card {
+  width: 168px;
+  height: 232px;
+  background-color: var(--base-grey);
+  border: solid 4px black;
+  padding: 1%;
+  text-align: center;
+  white-space: wrap;
+}
+
+.card:hover {
+  background-color: var(--base-hover);
+}
+
+.adicionar_itens {
+  background-color: aqua;
+}
+
+.card .botao__apagar img {
+  width: 24px;
+  border: none;  
+  cursor: pointer;
+}
+
+.card img {
+  width: 144px;
+  border: solid 2px var(--base-dark);
+}
+
+.card h2 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--base-light);
+  letter-spacing: 2px;
+}
+
+.card h3 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--base-light);
+  letter-spacing: 2px;
+}
+
+.preco_card {
+  width: 100%;
+}
+
+.adicionar_itens {
+  background-color: gold;
+  width: 400px;
+  height: 400px;
 }
