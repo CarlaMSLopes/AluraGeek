@@ -8,6 +8,7 @@ listaDeCards.forEach((card) => {
             <h2 class="${card.id}">${card.tituloDoproduto}</h2>
             <div class="preco_card">
               <h3 class="${card.id}">R$ ${card.precoDoProduto}</h3>
+              <br/>
               <button class="botao__apagar">
                 <img src="/assets/delete.svg" alt="Apagar" />
               </button>

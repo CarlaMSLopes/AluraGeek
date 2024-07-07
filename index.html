@@ -16,7 +16,7 @@
     </header>
     <main>
       <section class="lista_de_itens">
-        <h1>MEUS PRODUTOS!</h1>
+        <h1>MEUS PRODUTOS</h1>
         <section class="cards_produtos">
           <!-- <div class="card">
             <img src="/assets/luffy.png" alt="Action Figure Luffy" />
@@ -30,7 +30,44 @@
           </div> -->
         </section>
       </section>
-      <section class="adicionar_itens"></section>
+      <section class="painel_adicionar">
+        <div class="painelInterno_adicionar">
+          <h1>ADICIONAR PRODUTO</h1>
+          <form action="" class="formulario_adicionarProduto">
+            <div class="caixa">
+              <label for="nomeDoProduto">Nome do produto:</label>
+              <input type="text" id="nomeDoProduto" name="nomeDoProduto" />
+            </div>
+            <div class="caixa">
+              <label for="valorDoProduto">Valor do produto:</label>
+              <input
+                type="valorDoProduto"
+                id="valorDoProduto"
+                name="valorDoProduto"
+              />
+            </div>
+            <div class="imagemAdicionar caixa">
+              <label class="picture" for="pictureinput" tabindex="0">
+                <span class="pictureimage"
+                  ><img src="/assets/addImage.png" alt="" />
+                  <p>Escolha uma imagem para importar</p></span
+                >
+              </label>
+
+              <input
+                data-imagem
+                type="file"
+                name="pictureinput"
+                id="pictureinput"
+              />
+            </div>
+          </form>
+          <div class="botoes_adicionar_limpar">
+            <button class="botao botao_adicionar">Adicionar</button>
+            <button class="botao botao_limpar">Limpar</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="/main.js" type="module"></script>

@@ -20,7 +20,7 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 32px;
 }
 
 /* Bloco de produtos */
@@ -55,4 +55,35 @@ main {
     gap: 16px;
     justify-content: space-around;
     align-items: center;
+}
+
+/* Bloco de adicionar produtos */
+.painel_adicionar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    justify-self: flex-start;
+    gap: 16px;
+}
+
+.painelInterno_adicionar {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formulario_adicionarProduto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.botoes_adicionar_limpar {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
