@@ -71,6 +71,7 @@ main {
   padding: 1%;
   text-align: center;
   color: var(--base-light);
+  transition: 0.5s;
 }
 
 .card:hover {
@@ -88,7 +89,6 @@ main {
   border: solid 2px var(--base-dark);
 }
 
-/* tirei o nome de classe */
 .card h2 {
   font-family: var(--font-body);
   font-size: 16px;
@@ -97,7 +97,6 @@ main {
   white-space: wrap;
 }
 
-/* tirei o nome de classe */
 .card h3 {
   font-family: var(--font-body);
   font-size: 20px;
@@ -137,7 +136,7 @@ main {
   text-align: center;
   font-family: var(--font-body);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--base-dark);
   letter-spacing: 2px;
 }
@@ -150,16 +149,36 @@ main {
   border-radius: 4px;
 }
 
-
-
 .botao {
     width: 124px;
     height: 40px;
     border-radius: 4px;
     border: solid 2px var(--base-dark);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.5s;
 }
 
+.botao:hover {
+  background-color: var(--base-hover);
+}
 
+.botao_adicionar {
+  background-color: var(--base-dark);
+  color: var(--base-light);
+}
+
+.caixa input {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--base-grey); 
+  padding-left: 10px;
+}
+
+/* Input de imagem */
 #pictureinput {
     display: none;
 }
@@ -167,14 +186,10 @@ main {
 .picture {
     width: 176px;
     height: 174px;
-
-    background: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: var(--base-light);
     color: #aaa;
     border: 2px solid currentcolor;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     font-family: sans-serif;
     transition: color 300ms ease-in-out, background 300ms ease-in-out;
@@ -184,13 +199,13 @@ main {
 
 .picture:hover {
     color: #777;
-    background: #ccc;
+    background: var(--base-light);
 }
 
 .picture:active {
-    border-color: turquoise;
-    color: turquoise;
-    background: #eee;
+    border-color: aqua;
+    color: var(--base-hover);
+    background: white;
 }
 
 .picture:focus {
@@ -207,4 +222,21 @@ span {
     font-size: 14px;
     font-weight: 600;
     text-align: center;
+}
+
+.imagemAdicionar {
+  align-self: center;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--base-hover);
+  color: var(--base-dark);
+  font-size: 16px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+  padding: 1%;
 }
