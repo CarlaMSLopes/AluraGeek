@@ -47,7 +47,7 @@ main {
   width: 70%;
   background-color: white;
   border-radius: 4px;
-  padding: 2%;
+  padding: 16px;
 }
 
 .lista_de_itens h1 {
@@ -112,24 +112,16 @@ main {
   background-color: white;
   width: 30%;
   border-radius: 4px;
-  padding: 2%;
+  padding: 32px; 
 }
 
-.painelInterno_adicionar {
-  width: 100%;
-}
-
-.painelInterno_adicionar h1 {
+.painel_adicionar h1 {
   text-align: center;
   font-family: var(--font-title);
   font-size: 24px;
   font-weight: 700;
   color: var(--base-dark);
   letter-spacing: 2px;
-}
-
-.formulario_adicionarProduto {
-  width: 100%;
 }
 
 .formulario_adicionarProduto label {
@@ -150,7 +142,7 @@ main {
 }
 
 .botao {
-    width: 124px;
+    width: 128px;
     height: 40px;
     border-radius: 4px;
     border: solid 2px var(--base-dark);

@@ -1,0 +1,58 @@
+@media (min-width:1200px) {
+    .botoes_adicionar_limpar {
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width:1200px) {
+    .formulario_adicionarProduto input {
+        width: auto;
+        height: 32px;
+    }
+
+    .botoes_adicionar_limpar {
+       flex-wrap: wrap;
+       gap: 16px;
+       justify-content: center;
+       align-items: center;
+    }
+   
+}
+
+@media (max-width:900px) {
+    body {
+        gap: 32px;
+    }
+    main {
+        flex-direction: column;   
+        margin: 0 32px;    
+    }
+
+    .painel_adicionar {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 70%;
+    }
+
+    .cards_produtos {
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        gap: 16px;
+    }
+    main {
+        margin: 0; 
+    }
+
+    .cards_produtos {
+        justify-content: center;
+        gap: 16px;
+    }
+}
