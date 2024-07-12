@@ -33,44 +33,66 @@
       </section>
       <section class="painel_adicionar">
         <h1>ADICIONAR PRODUTO</h1>
-          <form action="" class="formulario_adicionarProduto">
-            <div class="caixa">
-              <label for="nomeDoProduto">Nome do produto:</label>
-              <input type="text" id="nomeDoProduto" name="nomeDoProduto" />
-            </div>
-            <div class="caixa">
-              <label for="valorDoProduto">Valor do produto:</label>
-              <input
-                type="valorDoProduto"
-                id="valorDoProduto"
-                name="valorDoProduto"
-              />
-            </div>
-            <div class="imagemAdicionar caixa">
-              <label class="picture" for="pictureinput" tabindex="0">
-                <span class="pictureimage"
-                  ><img src="/assets/addImage.png" alt="" />
-                  <p>Adicionar imagem</p></span
-                >
-              </label>
 
-              <input
-                data-imagem
-                type="file"
-                name="pictureinput"
-                id="pictureinput"
-              />
-            </div>
-          </form>
+        <form data-formulario action="" class="formulario_adicionarProduto">
+          <div class="caixa">
+            <label for="nomeDoProduto">Nome do produto:</label>
+            <input
+              data-nome
+              type="text"
+              id="nomeDoProduto"
+              name="nomeDoProduto"
+            />
+          </div>
+          <div class="caixa">
+            <label for="valorDoProduto">Valor do produto:</label>
+            <input
+              data-valor
+              type="valorDoProduto"
+              id="valorDoProduto"
+              name="valorDoProduto"
+            />
+          </div>
+
+          <input
+            data-imagem
+            type="file"
+            name="picture__input"
+            id="picture__input"
+          />
+          <div class="imagemAdicionar caixa">
+            <label class="picture" for="pictureinput" tabindex="0">
+              <span class="pictureimage"
+                ><img src="/assets/addImage.png" alt="" />
+                <p>Adicionar imagem</p></span
+              >
+            </label>
+
+            <input
+              data-imagem
+              type="file"
+              name="pictureinput"
+              id="pictureinput"
+            />
+          </div>
           <div class="botoes_adicionar_limpar">
-            <button class="botao botao_adicionar">Adicionar</button>
+            <button class="botao botao_adicionar" type="submit">
+              Adicionar
+            </button>
             <button class="botao botao_limpar">Limpar</button>
           </div>
+        </form>
       </section>
     </main>
-    <footer><h1>Desenvolvido por Carla <br> Alura Latam- 2024</h1></footer>
+    <footer>
+      <h1>
+        Desenvolvido por Carla <br />
+        Alura Latam- 2024
+      </h1>
+    </footer>
     <script src="/JS/conectaApi.js" type="module"></script>
     <script type="module" src="/JS/mostrarProdutos.js"></script>
     <script type="module" src="/JS/deletarProdutos.js"></script>
+    <script src="/JS/criarProdutos.js" type="module"></script>
   </body>
 </html>

@@ -19,7 +19,7 @@ function constroiProduto({
             <div class="preco_card">
               <h3 class="${id}">R$ ${precoDoProduto}</h3>
               <br/>
-              <button class="botao__apagar" data-id = "${id}">
+              <button class="botao__apagar" data-id="${id}">
                 <img src="/assets/delete.svg" alt="Apagar" />
               </button>
             </div>
